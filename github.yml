@@ -1,0 +1,130 @@
+---
+header:
+  author: Matt Brender
+  title: GitHub introduction
+  description: Coding in order to teach coding about coding and code and stuff. Revealator!
+
+slides:
+
+   - set_global:
+       background: '#404649'
+       
+### Slide 1 
+   -
+     - h1: Hey Gang
+     - h4: let's talk about github
+ 
+ 
+   - set_global:
+       fragment: true
+       
+   -
+     - h2: Matt Brender Here
+     - p: Podcaster | Blogger | Infinio
+     - p: Self-loathing Marketer
+     - link: ['@mjbrender', 'http://twitter.com/mjbrender']
+
+   -
+     - h3: AGENDA
+     - ol:
+        - Why version control?  ## basics of why this at all 
+        - What's GitHub?        ## Clarify git from GitHub
+        - Coding with others    ## Getting you comfortable enough with the UI and CLI
+   - 
+     - code: | 
+         # code --version
+         # v1.0.1
+     - p: ^ That's version control 
+      
+   - 
+     - code: | 
+         cp config config.old
+     - p: ^ That's not
+      
+   - 
+     - h2: taxonomy of version control
+     - p: Part 1 - checking it in
+     - p: Part 2 - versioning
+
+   - 
+     - h2: Why? 
+     - ul:
+       - p: Get to any previous state easily
+       - p: If lots of people, easier coordination ## Do better here ***** 
+       - p: ipso facto 
+       
+    -
+     - nested:
+         -
+           - h1: Version control enables sharing
+         - 
+           - image: ### DOCKER 
+         - 
+           - image: ### OpenStack 
+         - 
+           - image: ### GIFS 
+           
+
+
+# Slide 1.3 Examples -- Docker, Ansible, OpenStack // contributor slides of each.
+#### ^ Make scroll down instead of left to right? 
+#   - set_global:
+#       transition: rotate
+#
+#   -
+#     - nested:
+#         -
+#           - h3: This is a nested slide
+#           - p: Press down arrow
+#         -
+#           - h3: Every one was a Henry!
+#           - p: HENRY!
+#         -
+#           - h3: Sorry about that.
+#           - p: The person making up these slides has been sacked.
+#
+#   - set_global:
+#       transition: linear # rotate is annoying
+#
+#
+#
+#
+#   - set_global:
+#       fragment: "fade-out"
+#   -
+#     - h3: Links and images
+#     - image: 'https://pbs.twimg.com/profile_images/422168535/51035561796_N01_bigger.jpg'
+#     - link: [ 'Ansible Docs', 'http://docs.ansible.com' ]
+#     - link: [ 'Galaxy', 'http://galaxy.ansibleworks.com' ]
+#
+#   - set_global:
+#       fragment: false
+#
+#   -
+#     - h3: Yay!
+
+
+# Agenda 2.1 - GitHub --- Image of Octocat 
+# Agenda 2.2 - Separate out "Git" from "HUB" 
+
+## Have speaker notes on version contorl designed specifically for decentralization. svn. 
+## Changed the conversation from MY CODE to OUR REPOSITORY
+
+#Why GitHub? 
+#Collaboration is the key. 
+
+### Agenda 3.1
+# Me: I hope people fork the repo; I'm glad to accept pull reqeusts 
+# Marketing Coworker: I have no idea what you just said. 
+
+### Agenda 3.2 
+# Remember: GitHub is cool because sharing is cool 
+#
+#### Slide 3.3 -- sharing 
+#Two strategies. 
+#Fork and pull
+#Multi person RW
+#
+#
+#   - set_global:
+#       fragment: grow
