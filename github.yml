@@ -52,8 +52,12 @@ slides:
        - p: Get to any previous state easily
        - p: If lots of people, easier coordination ## Do better here ***** 
        - p: ipso facto 
-       
-    -
+
+ 
+   - set_global:
+       fragment: false
+              
+   -
      - nested:
          -
            - h1: Version control enables sharing
@@ -64,50 +68,25 @@ slides:
          - 
            - image: ### GIFS 
            
-
-
-# Slide 1.3 Examples -- Docker, Ansible, OpenStack // contributor slides of each.
-#### ^ Make scroll down instead of left to right? 
-#   - set_global:
-#       transition: rotate
-#
-#   -
-#     - nested:
-#         -
-#           - h3: This is a nested slide
-#           - p: Press down arrow
-#         -
-#           - h3: Every one was a Henry!
-#           - p: HENRY!
-#         -
-#           - h3: Sorry about that.
-#           - p: The person making up these slides has been sacked.
-#
-#   - set_global:
-#       transition: linear # rotate is annoying
-#
-#
-#
-#
-#   - set_global:
-#       fragment: "fade-out"
-#   -
-#     - h3: Links and images
-#     - image: 'https://pbs.twimg.com/profile_images/422168535/51035561796_N01_bigger.jpg'
-#     - link: [ 'Ansible Docs', 'http://docs.ansible.com' ]
-#     - link: [ 'Galaxy', 'http://galaxy.ansibleworks.com' ]
-#
-#   - set_global:
-#       fragment: false
-#
-#   -
-#     - h3: Yay!
-
-
-# Agenda 2.1 - GitHub --- Image of Octocat 
-# Agenda 2.2 - Separate out "Git" from "HUB" 
-
-## Have speaker notes on version contorl designed specifically for decentralization. svn. 
+ 
+   - set_global:
+       fragment: true
+       
+       
+   -     
+     - h2: So, let's github
+     - image: #### OCTOCAT 
+     
+   - 
+     - h2: Git - a distributed version control system
+     - h2: Hub - a connecty thing (technical term)
+     - p: GitHub - Where people connecty their codes
+     - class_notes:
+         Version contorl designed specifically for decentralization. Cvn or svn.
+         
+   - 
+     - h2: This code is OUR code
+     
 ## Changed the conversation from MY CODE to OUR REPOSITORY
 
 #Why GitHub? 
