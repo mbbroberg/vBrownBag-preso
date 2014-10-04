@@ -49,9 +49,9 @@ slides:
    - 
      - h2: Why? 
      - ul:
-       - p: Get to any previous state easily
-       - p: If lots of people, easier coordination ## Do better here ***** 
-       - p: ipso facto 
+       - Get to any previous state easily
+       - If lots of people, easier coordination ## Do better here ***** 
+       - ipso facto 
 
  
    - set_global:
@@ -60,7 +60,8 @@ slides:
    -
      - nested:
          -
-           - h1: Version control enables sharing
+           - h2: Version control 
+           - h2: enables sharing
          - 
            - image: ### DOCKER 
          - 
@@ -78,16 +79,20 @@ slides:
      - image: #### OCTOCAT 
      
    - 
-     - h2: Git - a distributed version control system
-     - h2: Hub - a connecty thing (technical term)
-     - p: GitHub - Where people connecty their codes
+     - h2: Git - Distributed version control
+     - h2: Hub - a connecty thing for bytes
+     - h2: GitHub = Code * People = Awesome
      - class_notes:
-         Version contorl designed specifically for decentralization. Cvn or svn.
+         Version contorl designed specifically for decentralization. Cvn or svn isn't. Moves the conversation from (see next slide).
          
    - 
      - h2: This code is OUR code
      
 ## Changed the conversation from MY CODE to OUR REPOSITORY
+
+
+   - 
+     - p: hhasdf
 
 #Why GitHub? 
 #Collaboration is the key. 
