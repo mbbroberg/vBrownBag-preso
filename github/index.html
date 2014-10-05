@@ -47,7 +47,7 @@ let's talk about github</h4>
 <h2  class="fragment">
 Matt Brender Here</h2>
 <p  class="fragment">
-Podcaster | Blogger | Infinio</p>
+Podcaster | Blogger | Hacker</p>
 <p  class="fragment">
 Self-loathing Marketer</p>
 <p><a href='http://twitter.com/mjbrender'  class="fragment">
@@ -58,30 +58,32 @@ Self-loathing Marketer</p>
 AGENDA</h3>
 <ol><br><li  class="fragment">Why version control?</li><br><li  class="fragment">What's GitHub?</li><br><li  class="fragment">Coding with others</li></ol></section><section data-background='#404649' data-transition='linear'>
 <pre><code contenteditable  class="fragment">
-# code --version
-# v1.0.1
+$code --version
+v1.0.1
 
 </pre></code>
 <p  class="fragment">
 ^ That's version control</p>
 </section><section data-background='#404649' data-transition='linear'>
 <pre><code contenteditable  class="fragment">
-cp config config.old
+$cp config config.old
 
 </pre></code>
 <p  class="fragment">
 ^ That's not</p>
 </section><section data-background='#404649' data-transition='linear'>
 <h2  class="fragment">
-taxonomy of version control</h2>
+Answering the why of version control</h2>
 <p  class="fragment">
 Part 1 - checking it in</p>
 <p  class="fragment">
 Part 2 - versioning</p>
-</section><section data-background='#404649' data-transition='linear'>
+<aside class='notes'>
+Version controls use snapshot or deltas or similar to track changes. Git is the first that is completely distributed, making it decentralized and ideal for collaboration.
+</aside></section><section data-background='#404649' data-transition='linear'>
 <h2  class="fragment">
 Why?</h2>
-<ul><br><li  class="fragment">Get to any previous state easily</li><br><li  class="fragment">If lots of people, easier coordination</li><br><li  class="fragment">ipso facto</li></ul></section><section data-background='#404649' data-transition='linear'>
+<ul><br><li  class="fragment">Each check in is a point in time that you annotate</li><br><li  class="fragment">Each pull is a collection of check ins</li><br><li  class="fragment">It gets much easier to coordinate and isolate issues</li></ul></section><section data-background='#404649' data-transition='linear'>
 <section>
 <h2 >
 Version control</h2>
@@ -113,12 +115,57 @@ Me - I hope people fork the repo and make pull requests</p>
 <p  class="fragment">
 Marketing Coworker - I have no idea what you just said</p>
 </section><section data-background='#404649' data-transition='linear'>
-<h2  class="fragment grow" >
+<h2  class="fragment">
+some basics</h2>
+<p  class="fragment">
+Repository - directory of code</p>
+<p  class="fragment">
+Branch - version of that code</p>
+<p  class="fragment">
+Commit - checking in code</p>
+<p  class="fragment">
+HEAD - symbolic reference to a commit</p>
+</section><section data-background='#404649' data-transition='linear'>
+<section>
+<h2 >
+important detail</h2>
+<h2 >
+git sees blobs, not files</h2>
+</section><section>
+<pre><code contenteditable >
+$ git status
+# On branch master
+nothing to commit, working directory clean
+
+</pre></code>
+</section><section>
+<p >
+Whack Whack Whack</p>
+</section><section>
+<pre><code contenteditable >
+$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD ..." to unstage)
+#     
+#	modified:   github.yml
+no changes added to commit (use "git add" and/or "git commit -a")
+
+</pre></code>
+</section><section>
+<pre><code contenteditable >
+$ git commit -a -m "Edited the slides"
+[master 7ad4398] Updated slides
+ 2 files changed, 91 insertions(+), 27 deletions(-)
+
+</pre></code>
+</section></section><section data-background='#404649' data-transition='linear'>
+<h2 >
 Two ways to collaborate easily -</h2>
-<p  class="fragment grow" >
-Fork and Pull Requests</p>
-<p  class="fragment grow" >
-RW Repo, Branch & Merge</p>
+<h3 >
+Read/Write Repository</h3>
+<h3 >
+Fork and Pull Requests</h3>
 </section>
 
                        </div>

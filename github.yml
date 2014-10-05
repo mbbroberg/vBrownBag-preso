@@ -107,19 +107,35 @@ slides:
      - p: Commit - checking in code 
      - p: HEAD - symbolic reference to a commit
 
+   - set_global:
+       fragment: false
+
    - 
      - nested: 
          - 
            - h2: important detail
-           - h2: git sees blogs, not files
+           - h2: git sees blobs, not files
+         - 
+           - code: | 
+               $ git status
+               # On branch master
+               nothing to commit, working directory clean
+         - 
+           - p: Whack Whack Whack
          - 
            - code: | 
                $ git status
                # On branch master
                # Changes to be committed:
-               #   (use "git reset HEAD <file>..." to unstage)
-               #
+               #   (use "git reset HEAD..." to unstage)
+               #     
                #	modified:   github.yml
+               no changes added to commit (use "git add" and/or "git commit -a")
+         -
+           - code: |
+               $ git commit -a -m "Edited the slides"
+               [master 7ad4398] Updated slides
+                2 files changed, 91 insertions(+), 27 deletions(-)
            
            
 # Git sees states of files. 
