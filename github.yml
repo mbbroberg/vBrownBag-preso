@@ -20,7 +20,7 @@ slides:
        
    -
      - h2: Matt Brender Here
-     - p: Podcaster | Blogger | Infinio
+     - p: Podcaster | Blogger | Hacker
      - p: Self-loathing Marketer
      - link: ['@mjbrender', 'http://twitter.com/mjbrender']
 
@@ -32,26 +32,28 @@ slides:
         - Coding with others    ## Getting you comfortable enough with the UI and CLI
    - 
      - code: | 
-         # code --version
-         # v1.0.1
+         $code --version
+         v1.0.1
      - p: ^ That's version control 
       
    - 
      - code: | 
-         cp config config.old
+         $cp config config.old
      - p: ^ That's not
       
    - 
-     - h2: taxonomy of version control
+     - h2: Answering the why of version control
      - p: Part 1 - checking it in
      - p: Part 2 - versioning
+     - class_notes:
+          Version controls use snapshot or deltas or similar to track changes. Git is the first that is completely distributed, making it decentralized and ideal for collaboration.
 
    - 
      - h2: Why? 
      - ul:
-       - Get to any previous state easily
-       - If lots of people, easier coordination ## Do better here ***** 
-       - ipso facto 
+       - Each check in is a point in time that you annotate 
+       - Each pull is a collection of check ins
+       - It gets much easier to coordinate and isolate issues
 
  
    - set_global:
@@ -83,32 +85,83 @@ slides:
      - h2: Hub - a connecty thing for bytes
      - h2: GitHub = Code * People = Awesome
      - class_notes:
-         Version contorl designed specifically for decentralization. Cvn or svn isn't. Moves the conversation from (see next slide).
+         Version control designed specifically for decentralization. Cvn or svn isnt. Moves the conversation from (see next slide).
          
    - 
      - h2: This code is OUR code
+     - h3: So now what?
+ 
      
 ## Changed the conversation from MY CODE to OUR REPOSITORY
-
+#Collaboration is the key. 
+### Agenda 3.1
 
    - 
-     - p: hhasdf
+     - p: Me - I hope people fork the repo and make pull requests 
+     - p: Marketing Coworker - I have no idea what you just said
+     
+   - 
+     - h2: some basics
+     - p: Repository - directory of code
+     - p: Branch - version of that code 
+     - p: Commit - checking in code 
+     - p: HEAD - symbolic reference to a commit
 
-#Why GitHub? 
-#Collaboration is the key. 
+   - 
+     - nested: 
+         - 
+           - h2: important detail
+           - h2: git sees blogs, not files
+         - 
+           - code: | 
+               $ git status
+               # On branch master
+               # Changes to be committed:
+               #   (use "git reset HEAD <file>..." to unstage)
+               #
+               #	modified:   github.yml
+           
+           
+# Git sees states of files. 
+# Could be .py or .yml or .pptx or .txt
+# Everything is a state ----- use nested to show this off. 
+## (All recorded locally in the .git )
+## git init 
+## tree
+## See it all 
+# The "Head"
 
-### Agenda 3.1
-# Me: I hope people fork the repo; I'm glad to accept pull reqeusts 
-# Marketing Coworker: I have no idea what you just said. 
+   - 
+     - h2: Two ways to collaborate easily -
+     - h3: Read/Write Repository
+     - h3: Fork and Pull Requests
+    
 
-### Agenda 3.2 
-# Remember: GitHub is cool because sharing is cool 
-#
-#### Slide 3.3 -- sharing 
-#Two strategies. 
-#Fork and pull
-#Multi person RW
+#### 
+# Read & Write
+# > Multiple poeople sharing same repository 
+# Fork & Pull
+# 
 #
 #
-#   - set_global:
-#       fragment: grow
+
+
+# Basic workflow: 
+# 
+
+# ## Add to Staging Area (aka the Index)
+# ## Commit to local branch 
+# ## Push to remote branch (origin or master or upstream or something)
+# ## Repeat.
+
+
+
+
+# Best references; 
+#http://www.vogella.com/tutorials/Git/article.html
+# Stackoverflow (Google hard before you post)
+# 
+# Other gotchas
+# repository size < 10MB 
+# whitespace is OS dependent and gets angry 
+# 
