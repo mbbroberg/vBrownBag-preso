@@ -1,6 +1,10 @@
-the Revelator
-=============
+vBrownBag-preso
+==========
 
+My revelator-based presentation for the vBrownBag podcast
+
+the Revelator (by [mpdehaan](https://github.com/mpdehaan/revelator))
+=============
 
 Who's That Writin' Reveal.js Slide HTML?
 
@@ -91,4 +95,5 @@ GPLv3
 Author
 ======
 
-Michael DeHaan
+Michael DeHaan - Original author  
+Matt Brender - This presentation
