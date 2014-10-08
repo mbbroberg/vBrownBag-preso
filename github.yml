@@ -32,7 +32,7 @@ slides:
         - Coding with others    ## Getting you comfortable enough with the UI and CLI
    - 
      - code: | 
-         $code --version        ## So let's think about versioning
+         $code --version 
          v1.0.1
      - p: ^ That's version control 
       
@@ -43,18 +43,11 @@ slides:
       
    - 
      - h2: Why do more? 
-     - p: Part 1 - checking it in
-     - p: Part 2 - versioning
-     - class_notes:
-          Version controls use snapshot or deltas or similar to track changes. Git is the first that is completely distributed, making it decentralized and ideal for collaboration.
-
-   - 
-     - h2: Why? 
      - ul:
        - Each check in is a point in time that you annotate 
-       - Each pull is a collection of check ins
        - Updates are coordinated and issues are isolated
-
+     - class_notes:
+          Version controls use snapshot or deltas or similar to track changes. Git is the first that is completely distributed, making it decentralized and ideal for collaboration.
  
    - set_global:
        fragment: false
@@ -87,10 +80,16 @@ slides:
      - h2: GitHub = Code * People = Awesome
      - class_notes:
          Version control designed specifically for decentralization. Cvn or svn isnt. Moves the conversation from (see next slide).
-         
+
+   - set_global:
+       fragment: false
+
    - 
      - h2: This code is OUR code
      - h3: So now what?
+ 
+   - set_global:
+       fragment: true
  
      
 ## Changed the conversation from MY CODE to OUR REPOSITORY
@@ -115,7 +114,7 @@ slides:
    - 
      - nested: 
          - 
-           - h2: important detail
+           - h1: important detail
            - h2: git sees blobs, not files
          - 
            - code: | 
@@ -179,15 +178,44 @@ slides:
 # > Multiple poeople sharing same repository 
 # Fork & Pull
 # 
+## Basic workflow: 
+# ## Add to Staging Area (aka the Index)
+# ## Commit to local branch 
+# ## Push to remote branch (origin or master or upstream or something)
+# ## Repeat.
 #
-#
-
    - 
-     - h2: basic workflow
-     - ol:
-        - commit code locally
-        - push to remote branch
-        - repeat
+     - nested:
+         - 
+           - h2: basic workflow
+           - ol:
+              - add code locally
+              - commit code locally
+              - push to remote branch
+              - repeat
+         - 
+           - h2: basics with lingo
+           - ol:
+              - add code to staging area (aka the index)
+              - commit to local branch
+              - push to remote branch
+              - repeat
+              
+         - 
+           - h2: common workflow
+           - ol:
+              - run git status, find you're behind master
+              - git pull --rebase
+              - commit code locally
+              - stash changes
+              - git pull --rebase
+              - stash pop
+              - git push upstream, forgot to set upstream...
+              - git remote add upstream upstream_URL
+              - git push upstream
+         -
+           - h2: (The UI is easier)
+              
 
    - set_global:
        background: '#f2ebcf'
@@ -230,13 +258,7 @@ slides:
    - 
      - p: Contribute to code.
   
-# Basic workflow: 
- 
 
-# ## Add to Staging Area (aka the Index)
-# ## Commit to local branch 
-# ## Push to remote branch (origin or master or upstream or something)
-# ## Repeat.
 
 
 

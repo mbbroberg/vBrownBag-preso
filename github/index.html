@@ -58,7 +58,7 @@ Self-loathing Marketer</p>
 AGENDA</h3>
 <ol><br><li  class="fragment">Why version control?</li><br><li  class="fragment">What's GitHub?</li><br><li  class="fragment">Coding with others</li></ol></section><section data-background='#404649' data-transition='linear'>
 <pre><code contenteditable  class="fragment">
-$code --version        ## So let's think about versioning
+$code --version 
 v1.0.1
 
 </pre></code>
@@ -74,16 +74,9 @@ $cp config config.old
 </section><section data-background='#404649' data-transition='linear'>
 <h2  class="fragment">
 Why do more?</h2>
-<p  class="fragment">
-Part 1 - checking it in</p>
-<p  class="fragment">
-Part 2 - versioning</p>
-<aside class='notes'>
+<ul><br><li  class="fragment">Each check in is a point in time that you annotate</li><br><li  class="fragment">Updates are coordinated and issues are isolated</li></ul><aside class='notes'>
 Version controls use snapshot or deltas or similar to track changes. Git is the first that is completely distributed, making it decentralized and ideal for collaboration.
 </aside></section><section data-background='#404649' data-transition='linear'>
-<h2  class="fragment">
-Why?</h2>
-<ul><br><li  class="fragment">Each check in is a point in time that you annotate</li><br><li  class="fragment">Each pull is a collection of check ins</li><br><li  class="fragment">Updates are coordinated and issues are isolated</li></ul></section><section data-background='#404649' data-transition='linear'>
 <section>
 <h2 >
 Version control</h2>
@@ -107,9 +100,9 @@ GitHub = Code * People = Awesome</h2>
 <aside class='notes'>
 Version control designed specifically for decentralization. Cvn or svn isnt. Moves the conversation from (see next slide).
 </aside></section><section data-background='#404649' data-transition='linear'>
-<h2  class="fragment">
+<h2 >
 This code is OUR code</h2>
-<h3  class="fragment">
+<h3 >
 So now what?</h3>
 </section><section data-background='#404649' data-transition='linear'>
 <h2  class="fragment">
@@ -131,8 +124,8 @@ Commit - checking in code</p>
 HEAD - symbolic reference to a commit</p>
 </section><section data-background='#404649' data-transition='linear'>
 <section>
-<h2 >
-important detail</h2>
+<h1 >
+important detail</h1>
 <h2 >
 git sees blobs, not files</h2>
 </section><section>
@@ -193,9 +186,19 @@ true for both</h2>
 <p >
 Git allows for local and remote copies of the code</p>
 </section><section data-background='#404649' data-transition='linear'>
+<section>
 <h2 >
 basic workflow</h2>
-<ol><br><li >commit code locally</li><br><li >push to remote branch</li><br><li >repeat</li></ol></section><section data-background='#f2ebcf' data-transition='linear'>
+<ol><br><li >add code locally</li><br><li >commit code locally</li><br><li >push to remote branch</li><br><li >repeat</li></ol></section><section>
+<h2 >
+basics with lingo</h2>
+<ol><br><li >add code to staging area (aka the index)</li><br><li >commit to local branch</li><br><li >push to remote branch</li><br><li >repeat</li></ol></section><section>
+<h2 >
+common workflow</h2>
+<ol><br><li >run git status, find you're behind master</li><br><li >git pull --rebase</li><br><li >commit code locally</li><br><li >stash changes</li><br><li >git pull --rebase</li><br><li >stash pop</li><br><li >git push upstream, forgot to set upstream...</li><br><li >git remote add upstream upstream_URL</li><br><li >git push upstream</li></ol></section><section>
+<h2 >
+(The UI is easier)</h2>
+</section></section><section data-background='#f2ebcf' data-transition='linear'>
 <section>
 <h2  class="fragment highlight-blue" >
 example of Read/write</h2>
