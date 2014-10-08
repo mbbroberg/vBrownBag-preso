@@ -9,7 +9,7 @@ slides:
    - set_global:
        background: '#404649'
        
-### Slide 1 
+########### Slide 1 ##########
    -
      - h1: Hey Gang
      - h4: let's talk about github
@@ -32,7 +32,7 @@ slides:
         - Coding with others    ## Getting you comfortable enough with the UI and CLI
    - 
      - code: | 
-         $code --version
+         $code --version        ## So let's think about versioning
          v1.0.1
      - p: ^ That's version control 
       
@@ -42,7 +42,7 @@ slides:
      - p: ^ That's not
       
    - 
-     - h2: Answering the why of version control
+     - h2: Why do more? 
      - p: Part 1 - checking it in
      - p: Part 2 - versioning
      - class_notes:
@@ -53,7 +53,7 @@ slides:
      - ul:
        - Each check in is a point in time that you annotate 
        - Each pull is a collection of check ins
-       - It gets much easier to coordinate and isolate issues
+       - Updates are coordinated and issues are isolated
 
  
    - set_global:
@@ -67,9 +67,9 @@ slides:
          - 
            - image: 'http://thenewstack.io/wp-content/uploads/2014/05/docker_stats-leanstack.png'
          - 
-           - image: ### OpenStack 
+           - image: 'http://neckbeardinfluence.com/wp-content/uploads/2014/10/openstack-commits-to-nova.png' 
          - 
-           - image: ### GIFS 
+           - image: 'http://neckbeardinfluence.com/wp-content/uploads/2014/10/github-hub.png'
            
  
    - set_global:
@@ -78,9 +78,10 @@ slides:
        
    -     
      - h2: So, let's github
-     - image: #### OCTOCAT 
+     - image: 'http://neckbeardinfluence.com/wp-content/uploads/2014/10/Octocat.png'
      
    - 
+     - h1: GitHub
      - h2: Git - Distributed version control
      - h2: Hub - a connecty thing for bytes
      - h2: GitHub = Code * People = Awesome
@@ -97,7 +98,8 @@ slides:
 ### Agenda 3.1
 
    - 
-     - p: Me - I hope people fork the repo and make pull requests 
+     - h2: Learning the lingo
+     - p: Me - I hope people fork the repo and send pull requests 
      - p: Marketing Coworker - I have no idea what you just said
      
    - 
@@ -109,7 +111,7 @@ slides:
 
    - set_global:
        fragment: false
-
+       
    - 
      - nested: 
          - 
@@ -136,8 +138,22 @@ slides:
                $ git commit -a -m "Edited the slides"
                [master 7ad4398] Updated slides
                 2 files changed, 91 insertions(+), 27 deletions(-)
+         - 
+           - code: |
+               $ git push master
+               Counting objects: 9, done.
+               Delta compression using up to 4 threads.
+               Compressing objects: 100% (5/5), done.
+               Writing objects: 100% (5/5), 590 bytes | 0 bytes/s, done.
+               Total 5 (delta 4), reused 0 (delta 0)
+               To https://github.com/mjbrender/vBrownBag-preso.git
+                  3551618..354c5c5  master -> master 
+        
+         -
+           - h2: Even easier in the UI
+           - p: (live demo)
            
-           
+        
 # Git sees states of files. 
 # Could be .py or .yml or .pptx or .txt
 # Everything is a state ----- use nested to show this off. 
@@ -153,6 +169,11 @@ slides:
      - h3: Fork and Pull Requests
     
 
+   - 
+     - h2: true for both
+     - p: Git allows for local and remote copies of the code
+  
+  
 #### 
 # Read & Write
 # > Multiple poeople sharing same repository 
@@ -161,9 +182,56 @@ slides:
 #
 #
 
+   - 
+     - h2: basic workflow
+     - ol:
+        - commit code locally
+        - push to remote branch
+        - repeat
 
+   - set_global:
+       background: '#f2ebcf'
+       fragment: 'highlight-blue'
+   
+   - 
+     - nested:
+         - 
+           - h2: example of Read/write
+         - 
+           - image: 'http://neckbeardinfluence.com/wp-content/uploads/2014/10/5e0c62b1fe0f4ac6760d9020433fd2c5.png'
+         - 
+           - image: 'http://neckbeardinfluence.com/wp-content/uploads/2014/10/d402327f3fcaa16a7d6e1bfea08ddb87.png'
+         - 
+           - image: 'http://neckbeardinfluence.com/wp-content/uploads/2014/10/00f4944daa51d7cbb901a04f0a2dd294.png'
+         - 
+           - image: 'http://neckbeardinfluence.com/wp-content/uploads/2014/10/d8d30cccbfbc89f9b4afe31a66973044.png'
+
+   - 
+     - nested:
+         - 
+           - h2: example of Fork and Pull Requests
+         - 
+           - image: 'http://neckbeardinfluence.com/wp-content/uploads/2014/10/5e0c62b1fe0f4ac6760d9020433fd2c5.png'
+         - 
+           - image: 'http://neckbeardinfluence.com/wp-content/uploads/2014/10/forking-github-repository.png'
+         - 
+           - image: 'http://neckbeardinfluence.com/wp-content/uploads/2014/10/d402327f3fcaa16a7d6e1bfea08ddb87.png'
+         - 
+           - image: 'http://neckbeardinfluence.com/wp-content/uploads/2014/10/00f4944daa51d7cbb901a04f0a2dd294.png'
+         - 
+           - image: 'http://neckbeardinfluence.com/wp-content/uploads/2014/10/ee27049a472a2a0fc76efb8c0ad28777.png'
+
+     
+   - set_global:
+       background: '#404649'  
+       fragment: false
+  
+  
+   - 
+     - p: Contribute to code.
+  
 # Basic workflow: 
-# 
+ 
 
 # ## Add to Staging Area (aka the Index)
 # ## Commit to local branch 

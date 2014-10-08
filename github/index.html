@@ -58,7 +58,7 @@ Self-loathing Marketer</p>
 AGENDA</h3>
 <ol><br><li  class="fragment">Why version control?</li><br><li  class="fragment">What's GitHub?</li><br><li  class="fragment">Coding with others</li></ol></section><section data-background='#404649' data-transition='linear'>
 <pre><code contenteditable  class="fragment">
-$code --version
+$code --version        ## So let's think about versioning
 v1.0.1
 
 </pre></code>
@@ -73,7 +73,7 @@ $cp config config.old
 ^ That's not</p>
 </section><section data-background='#404649' data-transition='linear'>
 <h2  class="fragment">
-Answering the why of version control</h2>
+Why do more?</h2>
 <p  class="fragment">
 Part 1 - checking it in</p>
 <p  class="fragment">
@@ -83,7 +83,7 @@ Version controls use snapshot or deltas or similar to track changes. Git is the 
 </aside></section><section data-background='#404649' data-transition='linear'>
 <h2  class="fragment">
 Why?</h2>
-<ul><br><li  class="fragment">Each check in is a point in time that you annotate</li><br><li  class="fragment">Each pull is a collection of check ins</li><br><li  class="fragment">It gets much easier to coordinate and isolate issues</li></ul></section><section data-background='#404649' data-transition='linear'>
+<ul><br><li  class="fragment">Each check in is a point in time that you annotate</li><br><li  class="fragment">Each pull is a collection of check ins</li><br><li  class="fragment">Updates are coordinated and issues are isolated</li></ul></section><section data-background='#404649' data-transition='linear'>
 <section>
 <h2 >
 Version control</h2>
@@ -91,11 +91,13 @@ Version control</h2>
 enables sharing</h2>
 </section><section>
 <p><img src='http://thenewstack.io/wp-content/uploads/2014/05/docker_stats-leanstack.png' style='border:0px;background-color:#404649' ></p></section><section>
-<p><img src='None' style='border:0px;background-color:#404649' ></p></section><section>
-<p><img src='None' style='border:0px;background-color:#404649' ></p></section></section><section data-background='#404649' data-transition='linear'>
+<p><img src='http://neckbeardinfluence.com/wp-content/uploads/2014/10/openstack-commits-to-nova.png' style='border:0px;background-color:#404649' ></p></section><section>
+<p><img src='http://neckbeardinfluence.com/wp-content/uploads/2014/10/github-hub.png' style='border:0px;background-color:#404649' ></p></section></section><section data-background='#404649' data-transition='linear'>
 <h2  class="fragment">
 So, let's github</h2>
-<p><img src='None' style='border:0px;background-color:#404649'  class="fragment"></p></section><section data-background='#404649' data-transition='linear'>
+<p><img src='http://neckbeardinfluence.com/wp-content/uploads/2014/10/Octocat.png' style='border:0px;background-color:#404649'  class="fragment"></p></section><section data-background='#404649' data-transition='linear'>
+<h1  class="fragment">
+GitHub</h1>
 <h2  class="fragment">
 Git - Distributed version control</h2>
 <h2  class="fragment">
@@ -110,8 +112,10 @@ This code is OUR code</h2>
 <h3  class="fragment">
 So now what?</h3>
 </section><section data-background='#404649' data-transition='linear'>
+<h2  class="fragment">
+Learning the lingo</h2>
 <p  class="fragment">
-Me - I hope people fork the repo and make pull requests</p>
+Me - I hope people fork the repo and send pull requests</p>
 <p  class="fragment">
 Marketing Coworker - I have no idea what you just said</p>
 </section><section data-background='#404649' data-transition='linear'>
@@ -159,6 +163,23 @@ $ git commit -a -m "Edited the slides"
  2 files changed, 91 insertions(+), 27 deletions(-)
 
 </pre></code>
+</section><section>
+<pre><code contenteditable >
+$ git push master
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 590 bytes | 0 bytes/s, done.
+Total 5 (delta 4), reused 0 (delta 0)
+To https://github.com/mjbrender/vBrownBag-preso.git
+   3551618..354c5c5  master -> master 
+
+</pre></code>
+</section><section>
+<h2 >
+Even easier in the UI</h2>
+<p >
+(live demo)</p>
 </section></section><section data-background='#404649' data-transition='linear'>
 <h2 >
 Two ways to collaborate easily -</h2>
@@ -166,6 +187,34 @@ Two ways to collaborate easily -</h2>
 Read/Write Repository</h3>
 <h3 >
 Fork and Pull Requests</h3>
+</section><section data-background='#404649' data-transition='linear'>
+<h2 >
+true for both</h2>
+<p >
+Git allows for local and remote copies of the code</p>
+</section><section data-background='#404649' data-transition='linear'>
+<h2 >
+basic workflow</h2>
+<ol><br><li >commit code locally</li><br><li >push to remote branch</li><br><li >repeat</li></ol></section><section data-background='#f2ebcf' data-transition='linear'>
+<section>
+<h2  class="fragment highlight-blue" >
+example of Read/write</h2>
+</section><section>
+<p><img src='http://neckbeardinfluence.com/wp-content/uploads/2014/10/5e0c62b1fe0f4ac6760d9020433fd2c5.png' style='border:0px;background-color:#f2ebcf'  class="fragment highlight-blue" ></p></section><section>
+<p><img src='http://neckbeardinfluence.com/wp-content/uploads/2014/10/d402327f3fcaa16a7d6e1bfea08ddb87.png' style='border:0px;background-color:#f2ebcf'  class="fragment highlight-blue" ></p></section><section>
+<p><img src='http://neckbeardinfluence.com/wp-content/uploads/2014/10/00f4944daa51d7cbb901a04f0a2dd294.png' style='border:0px;background-color:#f2ebcf'  class="fragment highlight-blue" ></p></section><section>
+<p><img src='http://neckbeardinfluence.com/wp-content/uploads/2014/10/d8d30cccbfbc89f9b4afe31a66973044.png' style='border:0px;background-color:#f2ebcf'  class="fragment highlight-blue" ></p></section></section><section data-background='#f2ebcf' data-transition='linear'>
+<section>
+<h2  class="fragment highlight-blue" >
+example of Fork and Pull Requests</h2>
+</section><section>
+<p><img src='http://neckbeardinfluence.com/wp-content/uploads/2014/10/5e0c62b1fe0f4ac6760d9020433fd2c5.png' style='border:0px;background-color:#f2ebcf'  class="fragment highlight-blue" ></p></section><section>
+<p><img src='http://neckbeardinfluence.com/wp-content/uploads/2014/10/forking-github-repository.png' style='border:0px;background-color:#f2ebcf'  class="fragment highlight-blue" ></p></section><section>
+<p><img src='http://neckbeardinfluence.com/wp-content/uploads/2014/10/d402327f3fcaa16a7d6e1bfea08ddb87.png' style='border:0px;background-color:#f2ebcf'  class="fragment highlight-blue" ></p></section><section>
+<p><img src='http://neckbeardinfluence.com/wp-content/uploads/2014/10/00f4944daa51d7cbb901a04f0a2dd294.png' style='border:0px;background-color:#f2ebcf'  class="fragment highlight-blue" ></p></section><section>
+<p><img src='http://neckbeardinfluence.com/wp-content/uploads/2014/10/ee27049a472a2a0fc76efb8c0ad28777.png' style='border:0px;background-color:#f2ebcf'  class="fragment highlight-blue" ></p></section></section><section data-background='#404649' data-transition='linear'>
+<p >
+Contribute to code.</p>
 </section>
 
                        </div>
