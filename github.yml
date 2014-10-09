@@ -201,18 +201,6 @@ slides:
               - push to remote branch
               - repeat
               
-         - 
-           - h2: common workflow
-           - ol:
-              - run git status, find you're behind master
-              - git pull --rebase
-              - commit code locally
-              - stash changes
-              - git pull --rebase
-              - stash pop
-              - git push upstream, forgot to set upstream...
-              - git remote add upstream upstream_URL
-              - git push upstream
          -
            - h2: (The UI is easier)
               
@@ -256,16 +244,47 @@ slides:
   
   
    - 
-     - p: Contribute to code.
+     - nested:
+         - 
+           - h2: basics with lingo (again)
+           - ol:
+              - add code to staging area (aka the index)
+              - commit to local branch
+              - push to remote branch
+              - repeat
+         - 
+           - h2: common workflow
+           - ol:
+              - run git status, find you're behind master
+              - git pull --rebase
+              - commit code locally
+              - stash changes
+              - git pull --rebase
+              - stash pop
+              - git push upstream, forgot to set upstream...
+              - git remote add upstream upstream_URL
+              - git push upstream
+
+   - 
+     - h2: advice for enjoying github
+     - p: find excuses to use it
+     - p: be patient (with yourself)
+     - p: partner up
+
+
+   - 
+     - h2: The Best Resources I've found
+     - link: ['Atlassian Workflow', 'https://www.atlassian.com/git/tutorials/comparing-workflows/']
+     - link: ['Git from the Trenches', 'https://ochronus.com/git-tips-from-the-trenches/']
+     - link: ['Git tutorial', 'http://www.vogella.com/tutorials/Git/article.html']
+     - link: ['Stackoverflow', 'http://stackoverflow.com/questions/tagged/github']
+     
+   - 
+     - h1: Thank you!
+     - image: 'https://octodex.github.com/images/class-act.png'
   
-
-
-
-
-
-# Best references; 
-#http://www.vogella.com/tutorials/Git/article.html
-# Stackoverflow (Google hard before you post)
+  
+  
 # 
 # Other gotchas
 # repository size < 10MB 
